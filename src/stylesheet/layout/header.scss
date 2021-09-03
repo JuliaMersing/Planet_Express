@@ -1,0 +1,24 @@
+@import "../core/_variables.scss";
+@import "../core/mixing.scss";
+
+.header {
+  display: flex;
+  background: $color-background;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  &__img {
+    width: 290px;
+    margin-top: 20px;
+
+    @include tablet {
+      width: 324px;
+    }
+
+    @include desktop {
+      width: 330px;
+    }
+  }
+}
