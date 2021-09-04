@@ -47,9 +47,10 @@ const Countdown = () => {
 
   return (
     <div className="component__container">
-      <div className="component">
+      <div className="component__header">
         <i className="component__icon far fa-clock"></i>
-        <h2 className="component_title">Finalización de la oferta</h2>
+        <h2 className="component_title">¡Paga la mitad de precio!</h2>
+        <h3>Oferta válida hasta el 30 de septiembre</h3>
         <div className="component__info">
           <div className="component__info1">
             <p>{timerDays}</p>
