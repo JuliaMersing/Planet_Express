@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../stylesheet/components/countdown.scss";
+import "../stylesheet/component.scss";
 
 const Countdown = () => {
   const [timerDays, setTimerDays] = useState("00");
@@ -46,30 +46,30 @@ const Countdown = () => {
   });
 
   return (
-    <div className="timer__container">
-      <div className="timer">
-        <i class="timer__icon far fa-clock"></i>
-        <h2 className="timer_title">Finalización de la oferta</h2>
-        <div className="timer__info">
-          <div className="timer__info1">
+    <div className="component__container">
+      <div className="component">
+        <i className="component__icon far fa-clock"></i>
+        <h2 className="component_title">Finalización de la oferta</h2>
+        <div className="component__info">
+          <div className="component__info1">
             <p>{timerDays}</p>
             <p>
               <small>Días</small>
             </p>
           </div>
-          <div className="timer__info2">
+          <div className="component__info2">
             <p>{timerHours}</p>
             <p>
               <small>Horas</small>
             </p>
           </div>
-          <div className="timer__info3">
+          <div className="component__info3">
             <p>{timerMinutes}</p>
             <p>
               <small>Minutos</small>
             </p>
           </div>
-          <div className="timer__info4">
+          <div className="component__info4">
             <p>{timerSeconds}</p>
             <p>
               <small>Segundos</small>
