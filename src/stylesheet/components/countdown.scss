@@ -37,6 +37,7 @@
   border: 1px solid white;
   border-radius: 3px;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 3em;
   padding: 3em;
   text-align: center;
