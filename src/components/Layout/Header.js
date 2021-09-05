@@ -10,7 +10,7 @@ export default function Header() {
       <Link to="/Team">
         <div className="team">
           <img className="team__img" src={team} alt="Team" title="Know team" />
-          <p className="team__title">Know out team</p>
+          <p className="team__title">Know our team</p>
         </div>
       </Link>
       <header className="header">
