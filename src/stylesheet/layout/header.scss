@@ -10,8 +10,12 @@
   margin-bottom: 15px;
 
   &__img {
-    width: 290px;
+    width: 230px;
     margin-top: 20px;
+
+    @include tablet {
+      width: 390px;
+    }
   }
 }
 
@@ -28,10 +32,17 @@
   &__img {
     width: 5em;
     margin-top: 0.5em;
+
+    @include tablet {
+      width: 10em;
+    }
   }
 
   &__title {
     font-size: 0.7em;
     color: $color-icon;
+    @include tablet {
+      font-size: 1.2em;
+    }
   }
 }

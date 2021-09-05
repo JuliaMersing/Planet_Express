@@ -1,4 +1,5 @@
 @import "../core/_variables.scss";
+@import "../core/mixing.scss";
 
 .footer {
   background-color: $color-background;
@@ -11,6 +12,10 @@
   border-top: 1px solid $color-detail;
   margin-top: 20px;
   bottom: 0;
+  font-size: 1.3em;
+  @include tablet {
+    font-size: 1.6em;
+  }
 
   &__small {
     color: $color-icon;
@@ -18,8 +23,12 @@
   }
 
   &__logo {
-    height: 40px;
-    margin: 20px;
+    height: 50px;
+    margin: 30px;
+    @include tablet {
+      height: 100px;
+      margin: 50px;
+    }
   }
 
   @keyframes beats {
