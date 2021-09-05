@@ -5,7 +5,7 @@ const getApiData = () => {
       const cleanData = data.map((character) => {
         return {
           name: character.Name,
-          photo: character.PicUrle,
+          photo: character.PicUrl,
           specie: character.Species,
           planet: character.Planet,
           status: character.Status,

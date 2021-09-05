@@ -1,16 +1,22 @@
 import React from "react";
 import Character from "../Team/CharacterCard";
 import "../../stylesheet/team/characterList.scss";
+import { Link } from "react-router-dom";
+import Members from "../../images/weAre.png";
 
 const CharactersList = (props) => {
   const characterElements = props.characters.map((character) => {
-    return <Character key={character.id} character={character} />;
+    return <Character key={character.name} character={character} />;
   });
 
   return (
-    <section>
-      <ul className="cards">{characterElements}</ul>
-    </section>
+    <div className="cards">
+      <img src={Members} alt="Team Members" className="cards__img" />
+      <ul className="cards__list">{characterElements}</ul>
+      <Link to="/">
+        <i className="home_icon fas fa-reply" />
+      </Link>
+    </div>
   );
 };
 

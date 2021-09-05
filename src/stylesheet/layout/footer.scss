@@ -21,4 +21,23 @@
     height: 40px;
     margin: 20px;
   }
+
+  @keyframes beats {
+    from {
+      transform: none;
+    }
+    50% {
+      transform: scale(1.4);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  &__heart {
+    display: inline-block;
+    font-size: 20px;
+    animation: beats 0.5s infinite;
+    color: $color-hover;
+  }
 }

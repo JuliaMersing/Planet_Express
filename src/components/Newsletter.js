@@ -39,7 +39,7 @@ const Newsletter = (props) => {
           🚀
         </button>
       </div>
-      <div className={isOpen ? "" : "component__hidden"}>
+      <div className={isOpen ? "component__show" : "component__hidden"}>
         Thank you for joining us! We've sent an email to {email}
       </div>
     </div>

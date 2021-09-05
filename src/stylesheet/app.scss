@@ -11,7 +11,7 @@
   text-align: center;
   flex-wrap: wrap;
 
-  .page__wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 1.5em;

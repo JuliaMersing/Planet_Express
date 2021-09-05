@@ -55,6 +55,7 @@
     border: 1px solid $color-icon;
     color: $color-icon;
     margin-top: 20px;
+    margin-bottom: 20px;
     &:hover {
       background-color: $color-hover;
     }
@@ -77,6 +78,19 @@
 
   &__hidden {
     display: none;
+  }
+
+  &__show {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 5em;
+    width: 20em;
+    margin: auto;
+    border: 1px solid $color-hover;
+    background-color: $color-detail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__small {

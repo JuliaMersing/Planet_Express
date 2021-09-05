@@ -17,9 +17,14 @@
     grid-row: 3/4;
     border-radius: 25px;
     margin: auto;
-    height: 9.37rem;
-    width: 9.37rem;
+    height: 70%;
+    width: 70%;
+    @include tablet {
+      height: 12em;
+      width: 12em;
+    }
   }
+
   &__name {
     grid-row: 1/2;
     margin: 20px 25px 0 25px;

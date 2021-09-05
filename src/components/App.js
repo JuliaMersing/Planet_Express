@@ -34,7 +34,7 @@ const App = () => {
             </div>
             <Newsletter />
           </Route>
-          <Route>
+          <Route path="/team">
             <Team characters={characters} />
           </Route>
           <Route>
