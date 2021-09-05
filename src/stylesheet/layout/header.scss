@@ -16,12 +16,16 @@
     @include tablet {
       width: 390px;
     }
+
+    @include desktop {
+      width: 490px;
+    }
   }
 }
 
 .team {
   position: fixed;
-  margin-left: 80%;
+  margin-left: 75%;
   margin-top: 1em;
 
   &:hover {
@@ -30,19 +34,25 @@
   }
 
   &__img {
-    width: 5em;
+    width: 4.5em;
     margin-top: 0.5em;
+    padding-right: 2em;
 
     @include tablet {
-      width: 10em;
+      width: 8em;
+      padding-right: 2.3em;
+    }
+    @include desktop {
+      width: 13em;
     }
   }
 
   &__title {
-    font-size: 0.7em;
+    font-size: 0.5em;
+    margin-right: 25px;
     color: $color-icon;
     @include tablet {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
   }
 }

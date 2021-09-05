@@ -52,7 +52,7 @@ class Packages extends React.Component {
                 value={this.state.price}
                 onChange={this.handleChange}
                 type="number"
-                placeholder="Check out our guide!"
+                placeholder="Check our guide!"
               />
             </label>
             <br />
