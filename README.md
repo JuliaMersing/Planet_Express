@@ -1,20 +1,36 @@
 # Planet Express
 
-Landing page de envío de mercancias.
+From far away lands, even other galaxies, your packages will always arrive on time with Planet Express!!
 
-## REQUISITOS
+This is an app made with react, to help you with your shipments, and also to let you know who we are.
 
-● Una cuenta atrás para que termine una oferta determinada
-● Un apartado para que puedas suscribirte a una newsletter. Una vez pulsado el botón
-éste debe decirte que te has suscrito con éxito y mostrarte el email.
-● Un apartado en el que pongan el número de paquetes y el peso y le calculen el precio
-● La landing debe ser totalmente responsive
-● Como un plus para la prueba, es decir, que no es obligatorio, puedes añadir una parte
-en la landing en la que muestres los diferentes empleados de la empresa usando esta
+## How can I start the project?
+
+1. Clone my repository
+2. Npm install
+3. Npm start
+
+## Initial Requirements 📋
+
+🚀 A countdown to the end of a given offer.
+🚀A section for you to subscribe to a newsletter. Once you click on the button
+button, it should tell you that you have successfully subscribed and show you the email.
+🚀 A section where they put the number of packages and weight and calculate the price for you.
+🚀 The landing must be fully responsive.
+🚀 As a plus for the test, i.e. it is not mandatory, you can add a part in the landing where you show the different employees of the company using this
 API: https://futuramaapi.herokuapp.com/
+🚀 I have also added an extra route in case you go to a page that does not exist, try it and see where it takes you!
 
-### TECNOLOGÍAS UTILIZADAS
+### Built with 🔨
 
-HTML, CSS
-React
-SASS
+🚀HTML, CSS
+🚀React
+🚀SASS
+
+## Do you have any idea? ✏️
+
+I'm an student and as I stated before am learning a whole lot of Front End Developing, so, if you have any idea that I could develope please tell me so and I will try to.
+
+## License
+
+MIT
