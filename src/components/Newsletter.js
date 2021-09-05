@@ -20,7 +20,7 @@ const Newsletter = (props) => {
   };
 
   return (
-    <div className="component__container">
+    <div className="component">
       <div className="component__header">
         <i className="component__icon far fa-newspaper"></i>
         <h3 className="component__title">Join our newsletter</h3>
@@ -39,7 +39,9 @@ const Newsletter = (props) => {
           🚀
         </button>
       </div>
-      <div className={isOpen ? "" : "hidden"}>{email}</div>
+      <div className={isOpen ? "" : "component__hidden"}>
+        Thank you for joining us! We've sent an email to {email}
+      </div>
     </div>
   );
 };
