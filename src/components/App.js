@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Layout/Header";
+import Footer from "./Layout/Footer";
 import Countdown from "./Countdown";
 import Newsletter from "./Newsletter";
 import Packages from "./Packages";
@@ -11,7 +11,7 @@ const App = () => {
     <div className="app">
       <div className="page">
         <Header />
-        <div className="page__components">
+        <div className="page__wrapper">
           <Countdown />
           <Packages />
         </div>

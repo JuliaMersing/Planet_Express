@@ -11,16 +11,14 @@
   text-align: center;
   flex-wrap: wrap;
 
-  .page__components {
+  .page__wrapper {
     display: flex;
-    margin-right: 20px;
-  }
+    flex-direction: column;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 
-  @include tablet {
-    grid-template-rows: 300px 1fr;
-  }
-
-  @include desktop {
-    grid-template-rows: 200px 1fr;
+    @include tablet {
+      flex-direction: row;
+    }
   }
 }

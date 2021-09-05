@@ -12,13 +12,20 @@
   &__img {
     width: 290px;
     margin-top: 20px;
+  }
+}
 
-    @include tablet {
-      width: 324px;
-    }
+.team {
+  position: fixed;
+  margin-left: 80%;
+  margin-top: 1em;
 
-    @include desktop {
-      width: 330px;
-    }
+  &__img {
+    width: 5em;
+    margin-top: 0.5em;
+  }
+
+  &__title {
+    font-size: 0.7em;
   }
 }

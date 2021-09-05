@@ -1,5 +1,5 @@
 import React from "react";
-import "../../stylesheet/team/characterCard";
+import "../../stylesheet/team/characterCard.scss";
 import { Link } from "react-router-dom";
 
 const CharacterCard = (props) => {

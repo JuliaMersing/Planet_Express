@@ -1,4 +1,5 @@
-@import "./core/_variables.scss";
+@import "../core/mixing.scss";
+@import "../core/variables.scss";
 
 .character {
   box-sizing: border-box;

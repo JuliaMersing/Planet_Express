@@ -42,23 +42,22 @@ class Packages extends React.Component {
       <div className="component__container">
         <div className="component__header">
           <i className="component__icon fas fa-space-shuttle"></i>
-          <h2 className="component_title">Calcula tu envío</h2>
+          <h2 className="pcomponent_title">Calculate shipping costs</h2>
           <div className="component__info">
             <label className="component__info1">
-              Precio por kilo:
+              Price per kg:
               <input
                 className="component__input"
                 name="price"
                 value={this.state.price}
                 onChange={this.handleChange}
                 type="number"
-                placeholder="Mira nuestra guía!"
+                placeholder="Check out our guide!"
               />
-              €
             </label>
             <br />
             <label className="component__info2">
-              Nº de paquetes:
+              Nº of packages:
               <input
                 className="component__input"
                 name="numberPackages"
@@ -69,7 +68,7 @@ class Packages extends React.Component {
             </label>
             <br />
             <label className="component__info3">
-              Peso:
+              Weight:
               <input
                 className="component__input"
                 name="weight"
@@ -77,7 +76,6 @@ class Packages extends React.Component {
                 onChange={this.handleChange}
                 type="number"
               />
-              kg
             </label>
             <br />
             <label className="component__info4">
@@ -88,7 +86,6 @@ class Packages extends React.Component {
                 value={this.state.finalPrice}
                 type="number"
               />
-              €
             </label>
           </div>
         </div>

@@ -49,31 +49,31 @@ const Countdown = () => {
     <div className="component__container">
       <div className="component__header">
         <i className="component__icon far fa-clock"></i>
-        <h2 className="component_title">¡Paga la mitad de precio!</h2>
-        <h3>Oferta válida hasta el 30 de septiembre</h3>
+        <h2 className="component_title">-50% on your shipment!</h2>
+        <small>Offer valid until 30 september</small>
         <div className="component__info">
           <div className="component__info1">
             <p>{timerDays}</p>
             <p>
-              <small>Días</small>
+              <small>Days</small>
             </p>
           </div>
           <div className="component__info2">
             <p>{timerHours}</p>
             <p>
-              <small>Horas</small>
+              <small>Hours</small>
             </p>
           </div>
           <div className="component__info3">
             <p>{timerMinutes}</p>
             <p>
-              <small>Minutos</small>
+              <small>Minutes</small>
             </p>
           </div>
           <div className="component__info4">
             <p>{timerSeconds}</p>
             <p>
-              <small>Segundos</small>
+              <small>Seconds</small>
             </p>
           </div>
         </div>
