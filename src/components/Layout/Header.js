@@ -6,19 +6,23 @@ import "../../stylesheet/layout/header.scss";
 
 export default function Header() {
   return (
-    <header className="header">
-      <Link to="/">
-        <img
-          className="header__img"
-          src={logo}
-          title="Go to home"
-          alt="Planet Express"
-        />
+    <div>
+      <Link to="/Team">
+        <div className="team">
+          <img className="team__img" src={team} alt="Team" title="Know team" />
+          <p className="team__title">Know out team</p>
+        </div>
       </Link>
-      <div className="team">
-        <img className="team__img" src={team} alt="Team" title="Know team" />
-        <p className="team__title">Know out team</p>
-      </div>
-    </header>
+      <header className="header">
+        <Link to="/">
+          <img
+            className="header__img"
+            src={logo}
+            title="Go to home"
+            alt="Planet Express"
+          />
+        </Link>
+      </header>
+    </div>
   );
 }

@@ -1,8 +1,22 @@
+import { React, useState } from "react";
 import "../stylesheet/component.scss";
 
-const Newsletter = () => {
-  const onClickListener = (ev) => {
-    alert("Thanks for joining us!");
+const Newsletter = (props) => {
+  const [email, setEmail] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleForm = (ev) => {
+    ev.preventDefault();
+  };
+
+  const handleInput = (ev) => {
+    const value = ev.target.value;
+    setEmail(value);
+    console.log(value);
+  };
+
+  const handleClick = (ev) => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -10,23 +24,22 @@ const Newsletter = () => {
       <div className="component__header">
         <i className="component__icon far fa-newspaper"></i>
         <h3 className="component__title">Join our newsletter</h3>
-        <form className="component__info1" action="/signup" method="post">
-          <label for="emailAddress"></label>
+        <form className="component__info1" onChange={handleForm}>
+          <label htmlFor="emailAddress"></label>
           <input
             type="email"
             id="emailAddress"
             name="emailAddress"
             placeholder="Escribe tu email"
             className="component__input--mail"
-          />
-          <input
-            className="component__button"
-            type="submit"
-            value="🚀"
-            onClick={onClickListener}
+            onChange={handleInput}
           />
         </form>
+        <button className="component__button" onClick={handleClick}>
+          🚀
+        </button>
       </div>
+      <div className={isOpen ? "" : "hidden"}>{email}</div>
     </div>
   );
 };

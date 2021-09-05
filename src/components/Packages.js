@@ -80,12 +80,7 @@ class Packages extends React.Component {
             <br />
             <label className="component__info4">
               Total:
-              <input
-                className="component__input"
-                name="inalPrice"
-                value={this.state.finalPrice}
-                type="number"
-              />
+              <p>{this.state.finalPrice}</p>
             </label>
           </div>
         </div>
