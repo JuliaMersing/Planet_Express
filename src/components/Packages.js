@@ -43,8 +43,8 @@ class Packages extends React.Component {
         <div className="component__header">
           <i className="component__icon fas fa-space-shuttle"></i>
           <h2 className="pcomponent_title">Calculate shipping costs</h2>
-          <div className="component__info">
-            <label>
+          <div className="component__form">
+            <label className="component__form-box">
               Price per kg:
               <input
                 className="component__input"
@@ -56,7 +56,7 @@ class Packages extends React.Component {
               />
             </label>
             <br />
-            <label>
+            <label className="component__form-box">
               Nº of packages:
               <input
                 className="component__input"
@@ -67,7 +67,7 @@ class Packages extends React.Component {
               />
             </label>
             <br />
-            <label>
+            <label className="component__form-box">
               Weight:
               <input
                 className="component__input"
@@ -78,9 +78,9 @@ class Packages extends React.Component {
               />
             </label>
             <br />
-            <label>
+            <label className="component__form-box">
               Total:
-              <p>{this.state.finalPrice}€</p>
+              <p className="component__input">{this.state.finalPrice}€</p>
             </label>
           </div>
         </div>

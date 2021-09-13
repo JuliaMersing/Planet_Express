@@ -9,10 +9,6 @@
   box-shadow: 5px 5px 10px $color-icon;
   border: 3px solid $color-detail;
 
-  &:hover {
-    transform: scale(1.05);
-  }
-
   &__img {
     grid-row: 3/4;
     border-radius: 25px;

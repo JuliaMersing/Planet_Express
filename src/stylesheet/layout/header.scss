@@ -3,8 +3,6 @@
 
 .header {
   display: flex;
-  background: $color-background;
-  width: 100%;
   height: auto;
   justify-content: center;
   margin-bottom: 15px;
@@ -15,10 +13,6 @@
 
     @include tablet {
       width: 390px;
-    }
-
-    @include desktop {
-      width: 490px;
     }
   }
 }
