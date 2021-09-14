@@ -12,7 +12,7 @@ import Team from "../components/Team/CharactersList";
 import { Route, Switch } from "react-router-dom";
 
 const App = () => {
-  const [characters, setCharacters] = useState(ls.get("characters", []));
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     if (characters.length === 0) {
