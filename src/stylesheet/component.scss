@@ -154,8 +154,13 @@
     border: 1px solid $color-hover;
     background-color: $color-detail;
     display: flex;
-    justify-content: center;
     align-items: center;
+    transform: translatey(0);
+    transition: transform ease 5s;
+    &:hover {
+      transform: translateY(-200px);
+    }
+
     @include tablet {
       height: 7em;
       width: 30em;
